@@ -20,7 +20,7 @@ def response
 		sh 'sudo docker run -d --name java_app -p 8383:8080  my_app:my_app'
 	}   
 	stage('Check Docker App') {
-	    sh 'sleep 10'
+	    sh 'sleep 20'
 	    sh 'curl http://10.28.13.24:8383/'
 	}
 	
